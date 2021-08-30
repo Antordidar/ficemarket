@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Author Meta -->
+	<meta name="author" content="EarnzBD">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+    <!-- meta character set -->
+	<title>FiceMarket - HTML5 Template</title>
+
+    <!--===================================================================================================
+		Add Css Files
+	=================================================================================================== -->
+		<!--Bootstrap Css v4.1.3
+		====================================-->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!--Custom Css V4.1.0
+		====================================-->
+		<link rel="stylesheet" href="assets/scss/components/style.css">
+		<!--Custom Fonts
+		====================================-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">        
+		
+    
+    	<link rel="stylesheet" type="text/css" href="//img.bafang.com/cdn/assets/okfe/seo-ex/4.5.49/font/commonFont/iconfont.css">
+
+    <!--===================================================================================================
+		Add Css Files
+	=================================================================================================== -->
+</head>
+<body>
+	<!--===================================================================================================
+												Start Header Area
+	===================================================================================================-->
+	<header class="header-area">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<div class="navbar-brand" href="#">
+				    <div class="logo">
+				        <img src="assets/img/logo.png" alt="">
+				    </div>
+				</div>
+                <!---Toggler Button-->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+				</button>
+
+				<div class="menubar_area collapse navbar-collapse" id="navbarSupportedContent">
+				    <!--(this is for Non Sign In Users)-->
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Exchange</a></li>
+						<li class="nav-item"><a class="nav-link" href="fund.html">Funds</a></li>
+						<li class="nav-item">
+							<div class="nav-link">
+								<a class="login-link" href="#">Login</a><strong>/</strong><a class="signup-link" href="#">Sign Up</a>	
+							</div>
+						</li>
+					</ul>
+					<!--(this is for Signed In Users)-->
+					<ul class="navbar-nav ml-auto hide">
+						<li class="nav-item"><a class="nav-link" href="#">Exchange</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Funds</a></li>
+						<li class="nav-item">
+                            <div class="header-user">
+                                <div class="header_Usermenu" id="usermenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="assets/img/user_photo.svg" alt="" class="header-menu-burger">
+                                    <img src="assets/img/menu-burger-arrow.svg" alt="" class="header-menu-arrow">
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="usermenu">
+                                    <div class="header-profile-menu-item-first">
+                                        <div class="user-profile-image"><img src="assets/img/user_photo.svg" alt="" class="profile-photo"></div>
+                                        <div class="right-content">
+                                            <div class="header-points">BTC <span>0</span></div>
+                                            <div class="bottom content">
+                                                <a class="header-profile-menu-link" href="#">Profile</a>
+                                                <span class="header-profile-menu-link">Logout</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-profile-menu-link">
+                                        <a href="#">Add account</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--===================================================================================================
+							  End Header Area
+	===================================================================================================-->
+    <div class="wrapper-area container-fluid">
+        <div class="row h-100">
+            <!-- left Side Collum Area -->
+            <div class="col-lg-2 col-md-4 col-12 exchange-body-item trader-box-left-area">
+				<div class="trader-header-box">
+					<img src="assets/img/user_photo.svg" alt="" class="user-profile-photo">
+					<div class="header-title">Trader</div>
+					<div class="trader-balance">0.00000000 <span><i class="fa fa-btc"></i>/$ 0.00</span></div>                        
+				</div>
+				<div class="trader-balance-box">
+					<h3>Balances</h3>
+									
+					<span class="iconfont icon-kline_tool_b"></span>
+				</div>
+            </div>
+            <div class="col-lg-10 col-md-8 col-12 exchange-user-balance-list-area">
+                <div class="balance-list-box-header-area row">
+                    <div class="col-lg-9 col-md-6 col-sm-6 left-switch-area">
+						<!-- Default switch -->
+						<div class="switch-box-cover">
+							<span>Small balance</span>
+							<!-- Rounded switch -->
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 right-search-area">
+						<div class="search-cover-box">
+							<input type="text" class="form-control" placeholder="Search">
+							<img src="assets/img/search-icon.svg" alt="" class="search-icon">
+						</div>
+					</div>
+				</div>
+				<div class="main-balance-content-box scroller">
+					<table class="table-cover">
+						<thead>
+							<tr>
+								<th>Coin</th>
+								<th>Name</th>
+								<th>Total Balance</th>
+								<th>Available Balance</th>
+								<th>In Order</th>
+								<th>BTC value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- <tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							 -->
+						</tbody>
+					</table>
+				</div>
+            </div>
+        </div>
+
+    </div>
+
+
+	<!--===================================================================================================
+						First jQuery Js, then proper Js, then Bootstrap and others
+	=================================================================================================== -->
+		<!--Jquery
+		====================================-->
+		<script src="//img.bafang.com/cdn/assets/okfe/seo-ex/4.5.49/font/commonFont/iconfont.js"></script>
+		<script src="assets/js/modernizr-3.6.0.min.js"></script>
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/propper.js"></script>
+		<!--Bootstrap Js v4.1.3
+		====================================-->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!--Custom Js
+		====================================-->
+		<script src="assets/js/custom.js"></script>
+    <!--===================================================================================================
+		Add Css Files
+	=================================================================================================== -->
+</body>
+</html>

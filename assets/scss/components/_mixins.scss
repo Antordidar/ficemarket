@@ -1,0 +1,175 @@
+// single short Items width
+@mixin exchange-body-item-width() {
+   // background-color: var(--exchange-body-color);
+   min-width: 18.666%;
+   display: inline-block;
+   vertical-align: top;
+   overflow: hidden;
+   box-sizing: border-box;
+   margin: 2px 0 !important;
+   // Responsive
+   @include respond(tab-land) {min-width: 21.666% !important;}
+   @include respond(land-port){min-width: 22.966% !important;}
+   @include respond(phone) {width: 250px !important;}
+   @include respond(small-phone) {width: calc(100% - 9px) !important;}
+ }
+
+ //  TradeView Area Width &-height
+@mixin exchange-body-widget-body() {
+   max-width: 43.987%;
+   margin: 2px 0 !important;
+   display: inline-block;
+   vertical-align: top;
+   overflow: hidden;
+   box-sizing: border-box;
+   // Responsive
+   @include respond(tab-land) {max-width: 34.987% !important;}
+   @include respond(tab-port) {min-width: 100% !important;}
+   @include respond(small-phone) {width: calc(100% - 9px) !important;}
+ }
+
+//  tradeView Height-wight
+ @mixin  trading-view-size {
+   width: 100%;
+   height: calc(100% - 65px);
+   @include respond(tab-port){
+      min-height: 400px;
+   }
+   @include respond(small-phone){
+      min-height: 300px;
+   }
+}
+
+
+ .blur-items{
+    filter: blur(3px);
+    opacity: 0.8;
+ }
+
+
+@mixin box-shadow2 {
+    -webkit-box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12); /* Safari/Chrome, other WebKit */
+       -moz-box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);  /* Firefox, other Gecko */
+        -ms-box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+         -o-box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);  /* Opera/IE 8+ */
+            box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+@mixin transition($args: all 0.3s ease 0s) {
+    -webkit-transition: $args; /* Safari/Chrome, other WebKit */
+       -moz-transition: $args; /* Firefox, other Gecko */
+         -o-transition: $args; /* Opera/IE 8+ */
+            transition: $args;
+}
+@mixin transition-duration($args1, $args2) {
+   -webkit-transition-duration: $args1, $args2;
+   -moz-transition-duration: $args1, $args2;
+   -o-transition-duration: $args1, $args2;
+   transition-duration: $args1, $args2;
+}
+
+@mixin transition-delay ($args: 0.3s){
+    -webkit-transition-delay: $args; /* Safari/Chrome, other WebKit */
+       -moz-transition-delay: $args; /* Firefox, other Gecko */
+         -o-transition-delay: $args; /* Opera/IE 8+ */
+            transition-delay: $args;
+}
+
+@mixin transition-property($args1, $args2) {
+   -webkit-transition-property: $args1, $args2;
+   -moz-transition-property: $args1, $args2;
+   -o-transition-property: $args1, $args2;
+   transition-property: $args1, $args2;
+}
+
+
+// Placeholder Mixins
+@mixin placeholder {
+   &.placeholder {
+       @content;
+   }
+   &:-moz-placeholder {
+       @content;
+   }
+   &::-moz-placeholder {
+       @content;
+   }
+   &::-webkit-input-placeholder {
+       @content;
+   }
+}
+
+@mixin filter ($filter-value) {
+   -webkit-filter: ($filter-value);
+   -moz-filter: ($filter-value);
+   -ms-filter: ($filter-value);
+   -o-filter: ($filter-value);
+   filter: ($filter-value);
+}
+
+@mixin transform($transform) {
+   -webkit-transform: $transform;
+   -moz-transform: $transform;
+   -ms-transform: $transform;
+   -o-transform: $transform;
+   transform: $transform;
+}
+
+@mixin keyframes ( $animation-name) {
+   @-webkit-keyframes #{$animation-name} {
+       @content;
+   }
+   @-moz-keyframes #{$animation-name} {
+       @content;
+   }
+   @-o-keyframes #{$animation-name} {
+       @content;
+   }
+   @keyframes #{$animation-name} {
+       @content;
+   }
+}
+
+@mixin animation ($args) {
+   -webkit-animation: $args;
+   -moz-animation: $args;
+   -o-animation: $args;
+   animation: $args;
+}
+
+@mixin box-shadow ($args) {
+    -webkit-box-shadow: $args; /* Safari/Chrome, other WebKit */
+       -moz-box-shadow: $args;  /* Firefox, other Gecko */
+        -ms-box-shadow: $args;
+         -o-box-shadow: $args;  /* Opera/IE 8+ */
+            box-shadow: $args;
+}
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees); /* Safari/Chrome, other WebKit */
+       -moz-transform: rotate($degrees); /* Firefox, other Gecko */
+        -ms-transform: rotate($degrees);
+         -o-transform: rotate($degrees); /* Opera/IE 8+ */
+            transform: rotate($degrees);
+}
+
+@mixin gradient($deg, $args1, $args2) {
+    background: -webkit-linear-gradient($deg, $args1, $args2);
+    background: -moz-linear-gradient($deg, $args1, $args2);
+    background: -o-linear-gradient($deg, $args1, $args2);
+    background: linear-gradient($deg, $args1, $args2);
+}
+
+@mixin radial-gradient($args1, $args2, $args3, $args4) {
+    background: -webkit-radial-gradient(ellipse farthest-side at $args1, $args2 20%, $args3 50%, $args4 110%);
+    background: -moz-radial-gradient(ellipse farthest-side at $args1, $args2 20%, $args3 50%, $args4 110%);
+    background: -o-radial-gradient(ellipse farthest-side at $args1, $args2 20%, $args3 50%, $args4 110%);
+    background: radial-gradient(ellipse farthest-side at $args1, $args2 20%, $args3 50%, $args4 110%);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius; /* Safari/Chrome, other WebKit */
+     -moz-border-radius: $radius; /* Firefox, other Gecko */
+          border-radius: $radius;
+             -ms-radius: $radius;
+              -o-radius: $radius; /* Opera/IE 8+ */
+}

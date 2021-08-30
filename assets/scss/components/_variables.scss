@@ -1,0 +1,173 @@
+:root{
+    //Fonts
+    // --primary-fonts:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    --primary-fonts: Roboto,sans-serif;
+
+    // width
+    --single-item-width      : 274px;
+    --single-trade-item-width: 870px;
+    --action-tool-box-height : 310px;
+    
+    // Fund Balance Width
+    // Height
+    --tradeview-height       : 556px;
+    --items-up-box-height    : 450px;
+    --order-box-height       : 420px;
+
+
+    //Color
+    --body-color	      : #1D1C33;
+    --body-bg-color       : #18172e;
+    --white-color	      : #ffffff;
+    --white-hover-color   : #ebebeb;
+    --font-color          : hsla(0,0%,100%,.6);
+    --black-color         : #131722;
+    --text-hover-color    : #34334d;
+    --link-hover-color    : #f7931a;
+    --theme-color	      : #292843;
+    --active-bg-color     : #444261;
+    --light-red-color     : #6a1c41;
+    --light-green-color   : #3b8b6e;
+    --table-text-color    : hsla(0,0%,100%,.7);
+    --active-text-color   : hsla(0,0%,100%,.6);
+    --text-bg-hover-color : hsla(0,0%,100%,.05);
+    --exchange-body-color : rgba(68,66,97,.4);
+    --text-bg-color       : rgba(68,66,97,.3);
+    --border-bottom-color : rgba(0,0,0,.2);
+    --lightest-red-color  : rgb(255, 0, 62);
+    --dark-red-color      : rgba(171,72,96,.15);
+    --lightest-green-color: rgb(0, 214, 137);
+    --dark-green-color    : rgba(71,153,123,.15);
+    --center-box-bg-color : #25243d;
+    --active-light-color  : #e2e0f4;
+    --input-text-color    : #9392af;
+    --logo-blue-color     : #5EC8D4;
+    --alert-text-color    : #b48728;
+    --alert-box-bg-color  : #fcf8e5;
+
+    --primary   	      :#007bff; 
+    --secondary           :#6c757d; 
+    --success  	    	  :#28a745; 
+    --danger  	          :#dc3545; 
+    --warning   		  :#ffc107; 
+    --info 	    		  :#17a2b8; 
+    --light     		  :#f8f9fa; 
+    --dark 	    		  :#343a40; 
+    --muted     	 	  :#6c757d; 
+
+    // font Size
+    --font-xs	    	: 10px; 
+    --font-s 		    : 11px; 
+    --font-base	    	: 12px;	 
+    --font-md   		: 13px; 	
+    --font-lg   		: 16px; 
+    --font-xl   		: 19px;  
+    --font-xxl	    	: 26px; 	
+    --font-xxxl		    : 50px; 
+    --font-xxxxl		: 70px;
+
+    /*line-height*/
+    --line-xs	    	: 10px;  			
+    --line-s    		: 11px;
+    --line-base	    	: 12px;
+    --line-md           : 13px;
+    --line-lg       	: 16px;
+    --line-xl	    	: 19px;
+    --line-xxl	    	: 26px;
+    --line-xxxl	    	: 50px;
+    --line-xxxxl    	: 70px;
+
+    //font-weight
+    --font-bold		    : 700;
+    --font-med-bold	    : 600;
+    --font-medium   	: 500;
+    --font-regular  	: 400;
+    --font-light    	: 300;
+
+    //Social Icons
+    --facebook 		    : #3b5998;
+    --twitter	    	: #00aced;
+    --linkedin	    	: #0077B5;
+    --dribbble		    : #c73b65;
+    --googleplus    	: #d34836;
+    --instagram	    	: #e2306a;
+    --pinterest	    	: #c92228;
+    --dropbox	    	: #3d9ae8;
+    --flickr	    	: #0063DC;
+    --tumblr	    	: #34526f;
+    --skype		    	: #12a5f4;
+    --youtube	    	: #c4302b;
+    --github	    	: #323232; 
+}
+
+/*Fonts*/
+$primary-fonts          : 'Montserrat', sans-serif;
+$secoundary-fonts       : 'Poppins', sans-serif;
+
+/*color*/
+$body       	  		: #aaaaaa;
+$theme-color	        : #012690;
+$light-blue          	: #0099fd;
+$lightest-blue 	        : #1cafc6;
+$white			        : #ffffff;
+$normal-blue        	: #9bf0fb;
+$black		        	: #000000;
+$lightest-gray          : #303b4a;
+$light-gray		: #384352;
+$dark-gray		: #222c3a;
+$black-light    : #252525;
+$sidebar-dark	: #282a39;
+$border-color   : #eeeeee;
+
+$primary  		:#007bff; 
+$secondary 		:#6c757d; 
+$success  		:#28a745; 
+$danger  		:#dc3545; 
+$warning  		:#ffc107; 
+$info 	 		:#17a2b8; 
+$light  		:#f8f9fa; 
+$dark 	 		:#343a40; 
+$muted 	 		:#6c757d; 
+
+/*font-size*/
+$font-xs		: 0.760rem; 
+$font-s 		: 0.800rem; 
+$font-base		: 1rem;	 
+$font-md 		: 1.143rem; 	
+$font-lg 		: 1.286rem; 
+$font-xl		: 1.571rem;  
+$font-xxl		: 1.714rem; 	
+$font-xxxl		: 1.858rem; 
+
+/*line-height*/
+$line-xs		: 1rem;  			
+$line-s			: 1.143rem;
+$line-base		: 1.286rem;
+$line-md        : 1.571rem;
+$line-lg   		: 1.714rem;
+$line-xl		: 1.857rem;
+$line-xxl		: 2rem;
+$line-xxxl		: 2.14rem;
+$line-xxxxl		: 2.586rem;
+
+/*font-weight*/
+$font-bold		: 700;
+$font-med-bold	: 600;
+$font-medium 	: 500;
+$font-regular	: 400;
+$font-light		: 300;
+
+/*Social Icons*/
+$facebook 		: #3b5998;
+$twitter		: #00aced;
+$linkedin		: #0077B5;
+$dribbble		: #c73b65;
+$googleplus		: #d34836;
+$instagram		: #e2306a;
+$pinterest		: #c92228;
+$dropbox		: #3d9ae8;
+$flickr			: #0063DC;
+$tumblr			: #34526f;
+$skype			: #12a5f4;
+$youtube		: #c4302b;
+$github			: #323232; 

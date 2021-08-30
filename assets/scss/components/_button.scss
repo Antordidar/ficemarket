@@ -1,0 +1,23 @@
+@import "responsive";
+
+.button_style{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 15px 40px;
+    color: var(--white);
+    font-size: var(--font-base);
+    font-weight: var(--font-medium);
+    font-family: var(--secendary-fonts);
+    @include border-radius(4px);
+    @include gradient(130deg, var(--light-yellow), var(--lightest-yellow));
+    box-shadow: 8px 13px 0 calc(var(--shadow-yellow), 30%);
+    //Responsive
+    @include respond(tab-port){
+        margin-top: 15px;
+    }
+
+    &:hover{
+        @include gradient(130deg, var(--lightest-yellow), var(--light-yellow));
+        color: var(--light);
+    }
+}
